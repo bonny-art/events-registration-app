@@ -37,7 +37,7 @@ export const GlobalStyles = css`
   }
 
   body {
-    background-color: ${theme.colors.gray};
+    background-color: ${theme.colors.backgroundGray};
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 16px;
