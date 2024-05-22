@@ -6,7 +6,7 @@ export const theme = Object.freeze({
     accentOrange: '#ef4800',
 
     backgroundGreen: '#e7f1ed',
-    backgroundGray: '#F7F8FA',
+    backgroundGray: 'rgb(247, 248, 250)',
 
     buttonWhite: '#FFFFFF',
 

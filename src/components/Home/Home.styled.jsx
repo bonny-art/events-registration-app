@@ -28,28 +28,28 @@ export const TextBox = styled.div`
   flex-direction: column;
   gap: 10px;
 
-  width: 610px;
+  width: 700px;
 
   h2 {
     font-size: 32px;
     font-weight: 500;
-    color: ${({ theme }) => theme.colors.gray};
+    color: ${({ theme }) => theme.colors.textBlack};
   }
 
   h1 {
     font-size: 48px;
     font-weight: 500;
-    color: #101828;
+    color: ${({ theme }) => theme.colors.accent};
   }
 
   span {
-    color: ${({ theme }) => theme.colors.orange};
+    color: ${({ theme }) => theme.colors.accentOrange};
   }
 
   p {
     font-size: 20px;
     font-weight: 500;
-    color: ${({ theme }) => theme.colors.gray};
+    color: ${({ theme }) => theme.colors.textGray};
   }
 `;
 
@@ -60,6 +60,7 @@ export const Img01 = styled.img`
   z-index: -2;
 
   height: 620px;
+  width: auto;
 `;
 
 export const ImgCover01 = styled.div`
@@ -73,9 +74,9 @@ export const ImgCover01 = styled.div`
 
   background: linear-gradient(
     270deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.9) 11%,
-    #fff 15%
+    rgba(247, 248, 250, 0) 0%,
+    rgba(247, 248, 250, 0.9) 11%,
+    rgb(247, 248, 250) 15%
   );
 `;
 
@@ -84,7 +85,7 @@ export const BenefitsSection = styled.div`
   margin-left: auto;
   margin-right: auto;
 
-  padding: 180px 20px;
+  padding: 100px 20px;
 
   ul {
     display: flex;
@@ -100,25 +101,25 @@ export const BenefitsSection = styled.div`
     width: 424px;
   }
 
-  svg {
-    width: 64px;
-    height: 64px;
-
-    fill: transparent;
-    stroke: ${({ theme }) => theme.colors.orange};
-  }
-
   h2 {
     font-weight: 500;
     font-size: 32px;
-    color: ${({ theme }) => theme.colors.black};
+    color: ${({ theme }) => theme.colors.accent};
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: 32px;
+    color: ${({ theme }) => theme.colors.accentOrange};
   }
 
   p {
     font-weight: 500;
     font-size: 24px;
     text-align: center;
-    color: ${({ theme }) => theme.colors.gray};
+    color: ${({ theme }) => theme.colors.textGray};
   }
 `;
 
@@ -129,11 +130,13 @@ export const AboutSection = styled.div`
   margin-left: auto;
   margin-right: auto;
 
-  padding: 64px 20px 112px;
+  padding-right: 20px;
 
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 522px;
 `;
 
 export const AboutTextBox = styled.div`
@@ -142,20 +145,26 @@ export const AboutTextBox = styled.div`
   align-items: end;
   gap: 40px;
 
-  width: 646px;
+  margin-left: auto;
+
+  width: 700px;
 
   h2 {
     font-weight: 500;
     font-size: 44px;
     text-align: right;
-    color: ${({ theme }) => theme.colors.orange};
+    color: ${({ theme }) => theme.colors.accent};
+  }
+
+  span {
+    color: ${({ theme }) => theme.colors.accentOrange};
   }
 
   p {
     font-weight: 500;
     font-size: 24px;
     text-align: right;
-    color: ${({ theme }) => theme.colors.gray};
+    color: ${({ theme }) => theme.colors.textGray};
   }
 `;
 
@@ -166,6 +175,7 @@ export const Img02 = styled.img`
   z-index: -2;
 
   height: 522px;
+  width: auto;
 `;
 
 export const ImgCover02 = styled.div`
@@ -179,8 +189,8 @@ export const ImgCover02 = styled.div`
 
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.9) 11%,
-    #fff 15%
+    rgba(247, 248, 250, 0) 0%,
+    rgba(247, 248, 250, 0.9) 11%,
+    rgb(247, 248, 250) 15%
   );
 `;

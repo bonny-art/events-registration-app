@@ -5,12 +5,17 @@ import {
   BenefitsSection,
   Container,
   HeroSection,
+  Img01,
+  Img02,
   ImgCover01,
   ImgCover02,
   TextBox,
 } from './Home.styled';
 import { Button } from 'components/Button/Button';
 import { Link } from 'react-router-dom';
+
+import img1 from '../../images/home_1.webp';
+import img2 from '../../images/home_2.webp';
 
 export const Home = () => {
   useEffect(() => {
@@ -21,67 +26,77 @@ export const Home = () => {
     <Container>
       <HeroSection>
         <TextBox>
-          <h2>Campervan Hab</h2>
+          <h2>Welcome to GeekGather!</h2>
           <h1>
-            Your Gateway to <span>Freedom!</span>
+            Discover, Connect, and Elevate <span>Your IT Experience</span>
           </h1>
           <p>
-            Explore freely with our trusted campervans. Make memories, find joy,
-            and travel with confidence. Where adventures begin.
+            Are you passionate about technology, innovation, and networking?
+            Look no further! GeekGather is your ultimate hub for all things
+            IT-related. Whether you’re a seasoned developer, a curious student,
+            or an aspiring tech enthusiast, we’ve got something exciting in
+            store for you.
           </p>
         </TextBox>
 
         <div>
           <Link to={'/catalog'}>
-            <Button className="form">Catalog</Button>
+            <Button className="home">Events</Button>
           </Link>
         </div>
+
+        <Img01 src={img1} alt="IT" />
 
         <ImgCover01></ImgCover01>
       </HeroSection>
 
       <BenefitsSection>
+        <h2>What’s GeekGather All About?</h2>
         <ul>
           <li>
-            {/* <svg>
-              <use href={`${sprite}#flexibility`} />
-            </svg> */}
-            <h2>Flexibility</h2>
-            <p>Explore freely with Campervan Hab's versatile rentals.</p>
+            <h3>Explore Engaging Events</h3>
+            <p>
+              Dive into a treasure trove of tech events! From hackathons and
+              workshops to conferences and webinars, we curate the best IT
+              gatherings just for you.
+            </p>
           </li>
 
           <li>
-            {/* <svg>
-              <use href={`${sprite}#adventure`} />
-            </svg> */}
-            <h2>Comfort</h2>
-            <p>Cozy interiors ensure a restful journey every time.</p>
+            <h3>Stay Informed</h3>
+            <p>
+              Get the latest updates on upcoming events, speakers, and trending
+              topics. Our event listings cover everything from AI and
+              cybersecurity to cloud computing and blockchain.
+            </p>
           </li>
 
           <li>
-            {/* <svg>
-              <use href={`${sprite}#comfort`} />
-            </svg> */}
-            <h2>Adventure</h2>
-            <p>Embrace boundless exploration with Campervan Hab's offerings.</p>
+            <h3>Connect with Experts</h3>
+            <p>
+              GeekGather isn’t just about events; it’s about building
+              connections. Network with industry leaders, share ideas, and
+              collaborate on groundbreaking projects.
+            </p>
           </li>
         </ul>
       </BenefitsSection>
 
       <AboutSection>
-        <div></div>
-
         <AboutTextBox>
-          <h2>Adventure Awaits</h2>
+          <h2>
+            Ready to <span>Geek Out</span>?
+          </h2>
           <p>
-            Gateway to adventure: flexible rentals, cozy comforts. Explore
-            freely, create memories, embrace the thrill. Unforgettable journeys,
-            quality service. Join us, embark on your next adventure.
+            Join us on this exhilarating journey. GeekGather—it’s where passion
+            meets pixels, where bytes become brilliance, and where you belong.
           </p>
           <Link to={'/catalog'}>
-            <Button className="form">Order</Button>
+            <Button className="home">Explore Upcoming Events</Button>
           </Link>
         </AboutTextBox>
+
+        <Img02 src={img2} alt="IT" />
 
         <ImgCover02></ImgCover02>
       </AboutSection>

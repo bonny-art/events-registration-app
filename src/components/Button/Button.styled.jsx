@@ -26,4 +26,13 @@ export const ButtonStyled = styled.button`
     gap: 5px;
     min-width: 128px;
   }
+
+  &.home {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1;
+
+    padding: 15px 24px;
+    border-radius: 54px;
+  }
 `;
