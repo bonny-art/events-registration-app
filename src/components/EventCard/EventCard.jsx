@@ -27,12 +27,12 @@ export const EventCard = ({ event }) => {
           <Organizer>{event.organizer}</Organizer>
 
           <ButtonBox>
-            <Link to={`/event/${event._id}/participants`}>
-              <Button>Show</Button>
+            <Link to={`/event/${event._id}/add-participant`}>
+              <Button>Register</Button>
             </Link>
 
-            <Link to={`/event/${event._id}/add-participant`}>
-              <Button>Participate</Button>
+            <Link to={`/event/${event._id}/participants`}>
+              <Button>View</Button>
             </Link>
           </ButtonBox>
         </ContentBox>
