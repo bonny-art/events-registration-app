@@ -1,17 +1,24 @@
 {
   "files": {
     "main.css": "/events-registration-app/static/css/main.cd2e038f.css",
-    "main.js": "/events-registration-app/static/js/main.b9a37f62.js",
+    "main.js": "/events-registration-app/static/js/main.8ee85876.js",
+    "static/js/983.f3174971.chunk.js": "/events-registration-app/static/js/983.f3174971.chunk.js",
+    "static/js/385.973894b4.chunk.js": "/events-registration-app/static/js/385.973894b4.chunk.js",
+    "static/js/202.3bf3754f.chunk.js": "/events-registration-app/static/js/202.3bf3754f.chunk.js",
     "static/media/Inter-Bold.ttf": "/events-registration-app/static/media/Inter-Bold.0eaf807b1cf0eceabe0f.ttf",
     "static/media/Inter-SemiBold.ttf": "/events-registration-app/static/media/Inter-SemiBold.6058d3da655fb35169c2.ttf",
     "static/media/Inter-Medium.ttf": "/events-registration-app/static/media/Inter-Medium.3f7acfe50aad7ad68548.ttf",
     "static/media/Inter-Regular.ttf": "/events-registration-app/static/media/Inter-Regular.9ca9ba81e9dcaa12b3a1.ttf",
+    "static/media/logo.svg": "/events-registration-app/static/media/logo.14ffa7bb6c84a182cc9ed269d7bc51b9.svg",
     "index.html": "/events-registration-app/index.html",
     "main.cd2e038f.css.map": "/events-registration-app/static/css/main.cd2e038f.css.map",
-    "main.b9a37f62.js.map": "/events-registration-app/static/js/main.b9a37f62.js.map"
+    "main.8ee85876.js.map": "/events-registration-app/static/js/main.8ee85876.js.map",
+    "983.f3174971.chunk.js.map": "/events-registration-app/static/js/983.f3174971.chunk.js.map",
+    "385.973894b4.chunk.js.map": "/events-registration-app/static/js/385.973894b4.chunk.js.map",
+    "202.3bf3754f.chunk.js.map": "/events-registration-app/static/js/202.3bf3754f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd2e038f.css",
-    "static/js/main.b9a37f62.js"
+    "static/js/main.8ee85876.js"
   ]
 }
