@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/events-registration-app/static/css/main.cd2e038f.css",
-    "main.js": "/events-registration-app/static/js/main.f3d19f8b.js",
-    "static/js/776.caebb4c9.chunk.js": "/events-registration-app/static/js/776.caebb4c9.chunk.js",
-    "static/js/385.4d109e63.chunk.js": "/events-registration-app/static/js/385.4d109e63.chunk.js",
+    "main.js": "/events-registration-app/static/js/main.d579225a.js",
+    "static/js/776.ba4e0bd2.chunk.js": "/events-registration-app/static/js/776.ba4e0bd2.chunk.js",
+    "static/js/385.d697c0da.chunk.js": "/events-registration-app/static/js/385.d697c0da.chunk.js",
     "static/js/202.3bf3754f.chunk.js": "/events-registration-app/static/js/202.3bf3754f.chunk.js",
     "static/media/Inter-Bold.ttf": "/events-registration-app/static/media/Inter-Bold.0eaf807b1cf0eceabe0f.ttf",
     "static/media/Inter-SemiBold.ttf": "/events-registration-app/static/media/Inter-SemiBold.6058d3da655fb35169c2.ttf",
@@ -14,13 +14,13 @@
     "static/media/logo.svg": "/events-registration-app/static/media/logo.14ffa7bb6c84a182cc9ed269d7bc51b9.svg",
     "index.html": "/events-registration-app/index.html",
     "main.cd2e038f.css.map": "/events-registration-app/static/css/main.cd2e038f.css.map",
-    "main.f3d19f8b.js.map": "/events-registration-app/static/js/main.f3d19f8b.js.map",
-    "776.caebb4c9.chunk.js.map": "/events-registration-app/static/js/776.caebb4c9.chunk.js.map",
-    "385.4d109e63.chunk.js.map": "/events-registration-app/static/js/385.4d109e63.chunk.js.map",
+    "main.d579225a.js.map": "/events-registration-app/static/js/main.d579225a.js.map",
+    "776.ba4e0bd2.chunk.js.map": "/events-registration-app/static/js/776.ba4e0bd2.chunk.js.map",
+    "385.d697c0da.chunk.js.map": "/events-registration-app/static/js/385.d697c0da.chunk.js.map",
     "202.3bf3754f.chunk.js.map": "/events-registration-app/static/js/202.3bf3754f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd2e038f.css",
-    "static/js/main.f3d19f8b.js"
+    "static/js/main.d579225a.js"
   ]
 }
