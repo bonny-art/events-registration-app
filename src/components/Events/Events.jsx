@@ -35,7 +35,8 @@ export const Events = () => {
   const prevSortOrderRef = useRef(sorting.sortDirection);
 
   useEffect(() => {
-    const hasPageChanged = prevPageRef.current !== query.page;
+    const hasPageChanged =
+      query.page !== 1 && prevPageRef.current !== query.page;
 
     const payload = {
       page: query.page,

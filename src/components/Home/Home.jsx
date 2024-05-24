@@ -40,7 +40,7 @@ export const Home = () => {
         </TextBox>
 
         <div>
-          <Link to={'/catalog'}>
+          <Link to={'/event-list'}>
             <Button className="home">Events</Button>
           </Link>
         </div>
@@ -91,7 +91,7 @@ export const Home = () => {
             Join us on this exhilarating journey. GeekGather—it’s where passion
             meets pixels, where bytes become brilliance, and where you belong.
           </p>
-          <Link to={'/catalog'}>
+          <Link to={'/event-list'}>
             <Button className="home">Explore Upcoming Events</Button>
           </Link>
         </AboutTextBox>
