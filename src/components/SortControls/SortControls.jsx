@@ -61,7 +61,9 @@ export const SortControls = () => {
       <Button onClick={() => handleSortClick('organizer')} className="select">
         {getSortLabel('Organizer', 'organizer')}
       </Button>
-      <Button onClick={() => handleSortClick('')}>Default</Button>
+      <Button onClick={() => handleSortClick('')} className="select">
+        Default
+      </Button>
     </SortingBox>
   );
 };

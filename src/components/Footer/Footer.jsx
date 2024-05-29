@@ -5,6 +5,7 @@ import {
   CopyrightContainer,
   CopyrightSection,
   Logo,
+  Name,
   NavSection,
 } from './Footer.styled';
 import { Link } from 'react-router-dom';
@@ -18,9 +19,12 @@ export const Footer = () => {
         <Link to={'/'}>
           <Logo>
             <img src={logo} alt="Logo" width="25" height="25" />
-            <p>
-              <span>Geek</span>Gather
-            </p>
+            <Name>
+              <p>
+                <span>Geek</span>
+              </p>
+              <p>Gather</p>
+            </Name>
           </Logo>
         </Link>
 

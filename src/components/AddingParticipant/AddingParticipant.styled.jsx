@@ -5,7 +5,7 @@ export const Container = styled.div`
 `;
 
 export const Section = styled.div`
-  width: 1352px;
+  max-width: 1352px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -15,4 +15,9 @@ export const Section = styled.div`
   gap: 20px;
 
   height: 100%;
+
+  @media (max-width: 374px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 `;

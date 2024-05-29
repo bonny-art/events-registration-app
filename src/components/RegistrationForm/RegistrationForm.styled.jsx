@@ -5,7 +5,8 @@ export const InputFormContainer = styled(Form)`
   background-color: ${({ theme }) => theme.colors.buttonWhite};
   border-radius: 27px;
 
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   margin: 0 auto;
 
   padding: 40px;
@@ -13,6 +14,14 @@ export const InputFormContainer = styled(Form)`
   display: flex;
   flex-direction: column;
   gap: 25px;
+
+  @media (max-width: 539px) {
+    padding: 30px;
+  }
+
+  @media (max-width: 424px) {
+    padding: 20px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -33,7 +42,7 @@ export const FormField = styled.label`
 `;
 
 export const FormInput = styled(Field)`
-  width: 260px;
+  max-width: 260px;
   height: 44px;
 
   padding: 13px 18px;
@@ -59,6 +68,12 @@ export const FormInput = styled(Field)`
     background-color: ${({ theme }) => theme.colors.backgroundGreen};
     border-color: ${({ theme }) => theme.colors.green};
   }
+
+  &:hover,
+  &:not(:placeholder-shown) {
+    background-color: ${({ theme }) => theme.colors.backgroundGreen};
+    border-color: ${({ theme }) => theme.colors.green};
+  }
 `;
 
 export const ErrorMessageStyled = styled.div`
@@ -75,6 +90,11 @@ export const ErrorMessageStyled = styled.div`
 export const RadioGroup = styled.div`
   display: flex;
   gap: 30px;
+
+  @media (max-width: 424px) {
+    flex-direction: column;
+    gap: 10px;
+  }
 `;
 
 export const RadioLabel = styled.label`

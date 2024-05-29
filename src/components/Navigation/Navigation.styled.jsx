@@ -10,6 +10,8 @@ export const Container = styled.div`
     line-height: 1.2;
     position: relative;
 
+    transition: color ${({ theme }) => theme.animation.transition};
+
     &.active {
       color: ${({ theme }) => theme.colors.accent};
 
@@ -28,5 +30,13 @@ export const Container = styled.div`
           `
           : ''}
     }
+
+    &:hover {
+      color: ${({ theme }) => theme.colors.accentOrange};
+    }
+  }
+
+  @media (max-width: 767px) {
+    gap: 20px;
   }
 `;

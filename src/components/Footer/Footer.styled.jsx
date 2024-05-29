@@ -6,7 +6,7 @@ export const Container = styled.footer`
 `;
 
 export const NavSection = styled.div`
-  width: 1352px;
+  max-width: 1352px;
   margin-left: auto;
   margin-right: auto;
   padding: 12px 20px;
@@ -15,6 +15,11 @@ export const NavSection = styled.div`
   justify-content: space-between;
 
   align-items: center;
+
+  @media (max-width: 374px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
   svg {
     width: 60px;
@@ -26,10 +31,10 @@ export const NavSection = styled.div`
     font-weight: 600;
     font-size: 24px;
     line-height: 1.25;
-  }
 
-  span {
-    color: ${({ theme }) => theme.colors.accent};
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
   }
 `;
 
@@ -38,6 +43,27 @@ export const Logo = styled.div`
   gap: 20px;
 
   align-items: center;
+
+  @media (max-width: 767px) {
+    gap: 10px;
+  }
+
+  span {
+    color: ${({ theme }) => theme.colors.accent};
+    transition: color ${({ theme }) => theme.animation.transition};
+  }
+
+  &:hover span {
+    color: ${({ theme }) => theme.colors.accentOrange};
+  }
+`;
+
+export const Name = styled.div`
+  display: flex;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
 `;
 
 export const CopyrightContainer = styled.header`
@@ -45,7 +71,7 @@ export const CopyrightContainer = styled.header`
 `;
 
 export const CopyrightSection = styled.div`
-  width: 1352px;
+  max-width: 1352px;
   margin-left: auto;
   margin-right: auto;
   padding: 8px 20px;
@@ -62,5 +88,11 @@ export const Copyright = styled.div`
   a {
     color: ${({ theme }) => theme.colors.accent};
     font-weight: 600;
+
+    transition: color ${({ theme }) => theme.animation.transition};
+
+    &:hover {
+      color: ${({ theme }) => theme.colors.accentOrange};
+    }
   }
 `;

@@ -42,7 +42,14 @@ const schema = yup.object().shape({
     .required('Email is required'),
   dateOfBirth: yup
     .date()
-    .max(new Date(), 'Date can not be in future')
+    .max(
+      new Date(
+        new Date().getFullYear() - 18,
+        new Date().getMonth(),
+        new Date().getDate()
+      ),
+      'You must be at least 18 years old'
+    )
     .required('Date of birth is required'),
   heardAboutEvent: yup
     .string()
@@ -61,7 +68,6 @@ export const RegistrationForm = () => {
   const participants = useSelector(
     participantsSelectors.selectFilteredParticipants
   );
-  console.log('🚀 ~ participants:', participants);
 
   const register = data => {
     const isExist = participants.find(

@@ -12,7 +12,7 @@ export const Container = styled.header`
 `;
 
 export const Section = styled.div`
-  width: 1352px;
+  max-width: 1352px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -20,6 +20,11 @@ export const Section = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 374px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
   svg {
     width: 60px;
@@ -31,10 +36,10 @@ export const Section = styled.div`
     font-weight: 600;
     font-size: 24px;
     line-height: 1.25;
-  }
 
-  span {
-    color: ${({ theme }) => theme.colors.accent};
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
   }
 `;
 
@@ -43,4 +48,26 @@ export const Logo = styled.div`
   gap: 20px;
 
   align-items: center;
+
+  @media (max-width: 767px) {
+    gap: 10px;
+  }
+
+  span {
+    color: ${({ theme }) => theme.colors.accent};
+
+    transition: color ${({ theme }) => theme.animation.transition};
+  }
+
+  &:hover span {
+    color: ${({ theme }) => theme.colors.accentOrange};
+  }
+`;
+
+export const Name = styled.div`
+  display: flex;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
 `;

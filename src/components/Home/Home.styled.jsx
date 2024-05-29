@@ -1,17 +1,19 @@
 import styled from '@emotion/styled';
 
-export const Container = styled.div`
-  padding: 0 20px;
+export const HeroSection = styled.div`
+  padding: 50px 0;
 
-  overflow-x: hidden;
+  @media (max-width: 904px) {
+    padding: 30px 0;
+  }
 `;
 
-export const HeroSection = styled.div`
-  width: 1352px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+export const HeroContainer = styled.div`
+  min-width: 320px;
+  max-width: 1352px;
+
+  padding: 0 20px;
+  margin: 0 auto;
 
   display: flex;
   flex-direction: column;
@@ -20,7 +22,9 @@ export const HeroSection = styled.div`
 
   gap: 40px;
 
-  padding: 162px 0;
+  @media (max-width: 374px) {
+    padding: 0 10px;
+  }
 `;
 
 export const TextBox = styled.div`
@@ -28,18 +32,30 @@ export const TextBox = styled.div`
   flex-direction: column;
   gap: 10px;
 
-  width: 700px;
+  max-width: 70%;
+
+  @media (max-width: 767px) {
+    max-width: 100%;
+  }
 
   h2 {
     font-size: 32px;
     font-weight: 500;
     color: ${({ theme }) => theme.colors.textBlack};
+
+    @media (max-width: 1023px) {
+      font-size: 25px;
+    }
   }
 
   h1 {
     font-size: 48px;
     font-weight: 500;
     color: ${({ theme }) => theme.colors.accent};
+
+    @media (max-width: 1023px) {
+      font-size: 30px;
+    }
   }
 
   span {
@@ -50,46 +66,56 @@ export const TextBox = styled.div`
     font-size: 20px;
     font-weight: 500;
     color: ${({ theme }) => theme.colors.textGray};
+
+    @media (max-width: 1023px) {
+      font-size: 16px;
+    }
+  }
+`;
+
+export const HeroButtonBox = styled.div`
+  @media (max-width: 424px) {
+    text-align: center;
   }
 `;
 
 export const Img01 = styled.img`
-  position: absolute;
-  top: 0;
-  left: 765px;
-  z-index: -2;
+  width: 60%;
+  height: auto;
+  margin-left: auto;
 
-  height: 620px;
-  width: auto;
-`;
-
-export const ImgCover01 = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-
-  width: 900px;
-  height: 620px;
-
-  background: linear-gradient(
-    270deg,
-    rgba(247, 248, 250, 0) 0%,
-    rgba(247, 248, 250, 0.9) 11%,
-    rgb(247, 248, 250) 15%
-  );
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 `;
 
 export const BenefitsSection = styled.div`
-  width: 1352px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 50px 0;
 
-  padding: 100px 20px;
+  @media (max-width: 904px) {
+    padding: 30px 0;
+  }
+`;
+
+export const BenefitsContainer = styled.div`
+  min-width: 320px;
+  max-width: 1352px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (max-width: 374px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
   ul {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
+
+    @media (max-width: 904px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   li {
@@ -98,7 +124,12 @@ export const BenefitsSection = styled.div`
     align-items: center;
     gap: 16px;
 
-    width: 424px;
+    width: calc((100% - (30px * 2)) / 3);
+
+    @media (max-width: 904px) {
+      width: 100%;
+      max-width: 500px;
+    }
   }
 
   h2 {
@@ -107,12 +138,21 @@ export const BenefitsSection = styled.div`
     color: ${({ theme }) => theme.colors.accent};
     text-align: center;
     margin-bottom: 50px;
+
+    @media (max-width: 1023px) {
+      font-size: 30px;
+    }
   }
 
   h3 {
     font-weight: 500;
     font-size: 32px;
+    text-align: center;
     color: ${({ theme }) => theme.colors.accentOrange};
+
+    @media (max-width: 1023px) {
+      font-size: 25px;
+    }
   }
 
   p {
@@ -120,40 +160,82 @@ export const BenefitsSection = styled.div`
     font-size: 24px;
     text-align: center;
     color: ${({ theme }) => theme.colors.textGray};
+
+    @media (max-width: 1023px) {
+      font-size: 16px;
+    }
   }
 `;
 
 export const AboutSection = styled.div`
-  position: relative;
+  padding: 50px 0;
 
-  width: 1352px;
-  margin-left: auto;
-  margin-right: auto;
+  @media (max-width: 904px) {
+    padding: 30px 0;
+  }
+`;
 
-  padding-right: 20px;
+export const AboutContainer = styled.div`
+  min-width: 320px;
+  max-width: 1352px;
+
+  padding: 0 20px;
+  margin: 0 auto;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
 
-  height: 522px;
+  position: relative;
+
+  gap: 40px;
+
+  @media (max-width: 374px) {
+    padding: 0 10px;
+  }
+`;
+
+export const Img02 = styled.img`
+  width: 60%;
+  height: auto;
+  margin-right: auto;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 `;
 
 export const AboutTextBox = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: end;
-  gap: 40px;
+  gap: 10px;
 
+  max-width: 70%;
+
+  text-align: right;
   margin-left: auto;
 
-  width: 700px;
+  @media (max-width: 767px) {
+    max-width: 100%;
+  }
 
   h2 {
+    font-size: 32px;
     font-weight: 500;
-    font-size: 44px;
-    text-align: right;
+    color: ${({ theme }) => theme.colors.textBlack};
+
+    @media (max-width: 1023px) {
+      font-size: 25px;
+    }
+  }
+
+  h1 {
+    font-size: 48px;
+    font-weight: 500;
     color: ${({ theme }) => theme.colors.accent};
+
+    @media (max-width: 1023px) {
+      font-size: 30px;
+    }
   }
 
   span {
@@ -161,36 +243,20 @@ export const AboutTextBox = styled.div`
   }
 
   p {
+    font-size: 20px;
     font-weight: 500;
-    font-size: 24px;
-    text-align: right;
     color: ${({ theme }) => theme.colors.textGray};
+
+    @media (max-width: 1023px) {
+      font-size: 16px;
+    }
   }
 `;
 
-export const Img02 = styled.img`
-  position: absolute;
-  top: 0;
-  right: 765px;
-  z-index: -2;
+export const AboutButtonBox = styled.div`
+  text-align: right;
 
-  height: 522px;
-  width: auto;
-`;
-
-export const ImgCover02 = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
-
-  width: 900px;
-  height: 522px;
-
-  background: linear-gradient(
-    90deg,
-    rgba(247, 248, 250, 0) 0%,
-    rgba(247, 248, 250, 0.9) 11%,
-    rgb(247, 248, 250) 15%
-  );
+  @media (max-width: 424px) {
+    text-align: center;
+  }
 `;

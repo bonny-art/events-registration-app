@@ -1,11 +1,11 @@
 export const theme = Object.freeze({
   colors: {
-    green: '#59B17A',
-    greenAccent: '#3f945f',
-    accent: '#005845',
-    accentOrange: '#ef4800',
+    green: '#45c1f5',
+    greenAccent: '#3eaddb',
+    accent: '#266a86',
+    accentOrange: '#f75e17',
 
-    backgroundGreen: '#e7f1ed',
+    backgroundGreen: '#dcecf2',
     backgroundGray: 'rgb(247, 248, 250)',
 
     buttonWhite: '#FFFFFF',
@@ -14,7 +14,7 @@ export const theme = Object.freeze({
     textGray: '#93939a',
     textBlack: '#1D1E21',
 
-    greenTransp: '#59b17a19',
+    greenTransp: '#5896b019',
     blackTransp: '#1d1e2166',
   },
 
