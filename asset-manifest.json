@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/events-registration-app/static/css/main.cd2e038f.css",
-    "main.js": "/events-registration-app/static/js/main.a1f1537f.js",
+    "main.js": "/events-registration-app/static/js/main.ff53f899.js",
     "static/js/776.38d81e73.chunk.js": "/events-registration-app/static/js/776.38d81e73.chunk.js",
     "static/js/385.1bb72001.chunk.js": "/events-registration-app/static/js/385.1bb72001.chunk.js",
     "static/js/202.3bf3754f.chunk.js": "/events-registration-app/static/js/202.3bf3754f.chunk.js",
@@ -14,13 +14,13 @@
     "static/media/logo.svg": "/events-registration-app/static/media/logo.14ffa7bb6c84a182cc9ed269d7bc51b9.svg",
     "index.html": "/events-registration-app/index.html",
     "main.cd2e038f.css.map": "/events-registration-app/static/css/main.cd2e038f.css.map",
-    "main.a1f1537f.js.map": "/events-registration-app/static/js/main.a1f1537f.js.map",
+    "main.ff53f899.js.map": "/events-registration-app/static/js/main.ff53f899.js.map",
     "776.38d81e73.chunk.js.map": "/events-registration-app/static/js/776.38d81e73.chunk.js.map",
     "385.1bb72001.chunk.js.map": "/events-registration-app/static/js/385.1bb72001.chunk.js.map",
     "202.3bf3754f.chunk.js.map": "/events-registration-app/static/js/202.3bf3754f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd2e038f.css",
-    "static/js/main.a1f1537f.js"
+    "static/js/main.ff53f899.js"
   ]
 }
